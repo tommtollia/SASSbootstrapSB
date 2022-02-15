@@ -11,7 +11,18 @@ body{
   background-color: $blue;
 }
 
+@mixin blurtext($blur: 5px){
+  color: transparent;
+  text-shadow: 0 0 $blur rgba(0, 0, 0, 0.5);
+}
+
 .boks{
   padding: $padding;
   margin-#{$side}: $margin;
+  font-size: 40px;
+  @include blurtext(20px);
+}
+
+.boks2{
+  @extend .boks;
 }
