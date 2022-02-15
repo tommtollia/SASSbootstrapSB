@@ -1,14 +1,17 @@
 $red: #F00;
 $blue: #00f;
-
+$side: left;
+$margin: 10px;
 $padding: 12px 20px;
 
 body{
-
-
 
 }
 .test{
   background-color: $blue;
 }
 
+.boks{
+  padding: $padding;
+  margin-#{$side}: $margin;
+}
